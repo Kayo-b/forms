@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="formScr.js"defer></script>
+    <title>Document</title>
+</head>
+<body>
+<form action="http://httpbin.org/post" method="post">
+
+
+<fieldset style="border-color: blueviolet;">
+
+    <legend style="color:blueviolet">Detalhes de contato</legend>
+
+
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name"><br>
+    </div>
+        
+    <div>
+        <label for="secondName">Second Name:</label>
+        <input type="text" id="secondName" name="secondName" placeholder = "Second Name">         
+    </div>
+    <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="user_email" name="email" placeholder="you@example.com">
+    </div>
+
+
+
+
+</fieldset>
+
+<fieldset style="border-color: blueviolet;">
+
+    <legend style="color:blueviolet" >Detalhes de seguranca</legend>
+
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="user_password">
+    </div>
+    <div>
+        <label for="date">Data de nascimento</label>
+        <input type="date" id="date" name="date">
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder = "age">
+    </div>
+    
+    
+</fieldset>
+
+<fieldset style="border-color: blueviolet;" >
+
+    <legend style="color:blueviolet"> Detalhes sobre a motivacao do contato</legend>
+
+
+
+    <div>
+        Motivo do contato: 
+        <select name="contactMotiv" id="contactMotiv">
+            <option value="pessoal">Pessoal</option>
+            <option value="profissional" selected>Profissional</option>
+    
+        </select>
+    
+    </div>
+    <div style="align-items:top">
+        Nivel de urgencia:
+    
+        <input type="radio" id="alta" name="urgencia" value="alta">
+        <label for="alta">Alto</label>
+        <input type="radio" id="media" name="urgencia" value="media">
+        <label for="media" checked>Medio</label>
+        <input type="radio" id="baixa" name="urgencia" value="baixa">
+        <label for="baixa">Baixo</label>
+        <br>
+        <label for="defcon" class="defconLabel">DEFCON LEVEL:  </label><BR>
+
+        <input type="range" style="width:140px;;" name="defcon" id="level" selected="0" min="0" max="4" step="1">
+        <img style="height:20px" src="" alt="" id="image">
+        <output class="deflevel" for="defcon" id="output";></output>
+
+        
+    </div>
+    
+    <div>
+        Temas a tratar:
+        <input type="checkbox" name="temas" id="contratacao">
+        <label for="contratacao">Contratacao</label>
+        <input type="checkbox" name="temas" id="contato">
+        <label for="contato">Retorno de contato</label>
+        <input type="checkbox" name="temas" id="curriculo">
+        <label for="curriculo">Solicitacao de Curriculo</label>
+        <input type="checkbox" name="temas" id="entrevista">
+        <label for="entrevista">Entrevista</label>
+        
+    </div>
+
+
+
+</fieldset>
+
+<br>
+<textarea style="border-color: blueviolet;" name="cmm" id="cmm" cols="50" rows="10" placeholder="Deixe um comentario..."></textarea>  
+<br>
+<button style="border-color:purple" type="submit">Submit</button>
+<button style="border-color:purple" type="reset">Reset Info</button>
+
+
+
+</form>
+
+
+
+<h1 class="greeting"></h1>
+
+</body>
+</html>
